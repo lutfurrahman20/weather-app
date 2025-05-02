@@ -14,7 +14,7 @@ const App = () => {
   }, [theme]);
   return (
     <div>
-      <div className="min-h-screen bg-white px-4 md:px-8 dark:bg-gray-900  dark:text-white">
+      <div className="min-h-screen bg-white  dark:bg-gray-900  dark:text-white">
         <Navbar />
         <Home />
         <SearchHistory />
