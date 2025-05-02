@@ -70,10 +70,10 @@ Start the server
 ## Screenshots
 
 ###  Light Mode
-![Light Mode](./weather-app/weather.png)
+![Light Mode](/weather-app/weather.png)
 
 ###  Dark Mode
-![Dark Mode](./weather-app/weatherDark.png)
+![Dark Mode](/weather-app/weatherDark.png)
 
 ## Demo
 
