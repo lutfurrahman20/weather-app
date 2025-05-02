@@ -48,24 +48,3 @@ const WeatherCard: React.FC<Props> = ({ data }) => {
 };
 
 export default WeatherCard;
-// "main": {
-//   "temp": 5.88,
-//   "feels_like": 3.75,
-//   "temp_min": 5.88,
-//   "temp_max": 5.88,
-//   "pressure": 1021,
-//   "humidity": 89,
-//   "sea_level": 1021,
-//   "grnd_level": 984
-// },
-// "visibility": 10000,
-// "wind": {
-//   "speed": 2.74,
-//   "deg": 268,
-//   "gust": 4.71
-// },
-// "sys": {
-//     "country": "RU",
-//     "sunrise": 1746134128,
-//     "sunset": 1746191902
-//   },
