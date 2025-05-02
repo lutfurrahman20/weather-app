@@ -2,7 +2,7 @@
 
 A sleek and responsive weather application built with **React**, **TypeScript**, **Tailwind CSS**, and **Redux Toolkit**. This app fetches real-time weather data using the **OpenWeatherMap API**, supports **dark mode**, and displays **search history** using **Redux Persist**.
 
-## 🚀 Features
+## Features
 
 -  **Search by City** to get current weather info
 -  **Dark Mode** support (Redux Persisted)
