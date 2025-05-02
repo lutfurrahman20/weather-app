@@ -1,5 +1,5 @@
-import { configureStore } from '@reduxjs/toolkit';
-import weatherReducer from "../features/weather/weatherSlice"
+import { configureStore } from "@reduxjs/toolkit";
+import weatherReducer from "../features/weather/weatherSlice";
 import {
   persistStore,
   persistReducer,
@@ -9,20 +9,28 @@ import {
   PERSIST,
   PURGE,
   REGISTER,
-} from 'redux-persist';
-import storage from 'redux-persist/lib/storage';
+} from "redux-persist";
+//theme
+import themeReducer from "../features/theme/themeSlice";
+import storage from "redux-persist/lib/storage";
+import { combineReducers } from "redux";
 
-const persistConfig = {
-  key: 'root',
-  storage,
-};
+const rootReducer = combineReducers({
+  weather: weatherReducer,
+  theme: themeReducer, 
+});
 
-const persistedReducer = persistReducer(persistConfig, weatherReducer);
+const persistedReducer = persistReducer(
+  {
+    key: "root",
+    version: 1,
+    storage,
+  },
+  rootReducer
+);
 
 export const store = configureStore({
-  reducer: {
-    weather: persistedReducer,
-  },
+  reducer: persistedReducer,
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
       serializableCheck: {
@@ -31,5 +39,9 @@ export const store = configureStore({
     }),
 });
 
-export type RootState = ReturnType<typeof store.getState>;
+
 export const persistor = persistStore(store);
+
+
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;
