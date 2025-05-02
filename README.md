@@ -77,7 +77,7 @@ Start the server
 
 ## Demo
 
-
+Check out the live version of the project here: [Live Link](https://weather-app-alpha-ten-14.vercel.app/)
 
 
 ## Author
