@@ -62,8 +62,8 @@ const weatherSlice = createSlice({
         );
         if (!alreadyExists) {
           state.searchHistory.unshift(action.payload);
-          if (state.searchHistory.length > 5) {
-            state.searchHistory.pop(); // optional limit
+          if (state.searchHistory.length > 9) {
+            state.searchHistory.pop(); 
           }
         }
       })
