@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import { RootState } from "./store/store";
 import { useSelector } from "react-redux";
 import Navbar from "./components/navbar/NavBar";
+import Footer from "./components/footer/Footer";
 
 const App = () => {
   const theme = useSelector((state: RootState) => state.theme.theme);
@@ -17,6 +18,7 @@ const App = () => {
         <Navbar />
         <Home />
         <SearchHistory />
+        <Footer/>
         
       </div>
     </div>

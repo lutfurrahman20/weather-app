@@ -7,8 +7,8 @@ const SearchHistory = () => {
   const history = useSelector((state: RootState) => state.weather.searchHistory);
 
   return (
-    <div className="mt-8">
-      <div className="flex justify-between items-center mb-4">
+    <div className="mt-8 mx-auto">
+      <div className="flex justify-evenly items-center mb-4">
         <h3 className="text-xl font-bold">Search History</h3>
         <button
           onClick={() => dispatch(clearHistory())}
@@ -21,7 +21,7 @@ const SearchHistory = () => {
         {history.map((item, index) => (
           <div
             key={index}
-            className="bg-white dark:bg-gray-800 p-3 rounded-md shadow-sm"
+            className="bg-white dark:bg-gray-800 p-3 rounded-md shadow-lg hover:bg-cyan-500"
           >
             <h4 className="text-lg font-semibold">{item.name}</h4>
             <div className="flex items-center space-x-3">
