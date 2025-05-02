@@ -17,11 +17,11 @@ const SearchHistory = () => {
           Clear
         </button>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-4">
         {history.map((item, index) => (
           <div
             key={index}
-            className="bg-white dark:bg-gray-800 p-3 rounded-md shadow-lg hover:bg-cyan-500"
+            className="bg-white dark:bg-gray-800 p-3 rounded-md shadow-lg hover:bg-cyan-500 "
           >
             <h4 className="text-lg font-semibold">{item.name}</h4>
             <div className="flex items-center space-x-3">
