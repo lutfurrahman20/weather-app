@@ -9,7 +9,7 @@ interface WeatherData {
   main: { temp: number; humidity: number; feels_like: number };
   wind: { speed: number };
   visibility: number;
-  sys: { sunrise: number; sunset: number };
+  sys: { country: string; sunrise: number; sunset: number };
 }
 
 interface WeatherState {

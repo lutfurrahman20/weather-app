@@ -12,7 +12,7 @@ const Home = () => {
   const handleSearch = () => {
     if (city.trim()) {
       dispatch(fetchWeather(city));
-      setCity(""); // clear input field because not beautiful search field.
+      setCity(""); 
     }
   };
 
